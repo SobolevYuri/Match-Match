@@ -1,6 +1,6 @@
-.vscode
 .idea
 node_modules
+.vscode
 *.bundle.js
 *.log
 Build.js.map
