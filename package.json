@@ -1,0 +1,14 @@
+{
+  "name": "match-match-game",
+  "version": "1.0.0",
+  "description": "My first game",
+  "main": "index.html",
+  "author": "Yuri Sobolev",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.6.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4"
+  }
+}

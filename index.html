@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Match-Match</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="inner-wrap">
+                <div class="timer">
+                    <span class="minutes" id="minutes">Player</span>
+                    <span>:</span>
+                    <span class="seconds" id="seconds">CURRENT TIME</span>
+                </div>
+                <h1 class="game-name">Match-Match Game</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="inner-wrap">
+                <div class="window-game">
+                    <div class="about-game">
+                           <ul class="game-rules">
+                               <div class="rules-title">Game rules:</div>
+                               <li>When the game begins, all pictures are hidden.</li>
+                               <li>Only 2 cards can be chosen simultaneously.</li>
+                               <li>If the cards matches - they will be hidden =)</li>
+                           </ul>
+                            <ol class="game-purposes">
+                                <div class="purposes-title">To Play:</div>
+                                <li>Select 2 cards to try to match the pictures.</li>
+                                <li>If you match the pictures you can go again.</li>
+                                <li>If they do not match is the computer turn them.</li>
+                                <li>The player that finds all pairs wins!</li>
+                                <li>Have fun this game! =)</li>
+                            </ol>
+                    </div>
+                </div>
+                <aside>
+                    <ul class="game-menu">
+                        <li class="new-game-btn"><button id="newGame" class="new-game">New Game</button></li>
+                        <li class="difficulty-menu">
+                            <ul>
+                                <li class="difficulties-title">Game Difficulty</li>
+                                <li><button id="easy">Easy (5 x 2)</button></li>
+                                <li><button id="medium">Medium (6 x 3)</button></li>
+                                <li><button id="hard">Hard (8 x 3)</button></li>
+                            </ul>
+                        </li>
+                        <li class="shirt-menu">
+                            <ul>
+                                    <li class="shirts-title">Skirt Cards</li>
+                                    <li><button id="shirt1" class="shirt" ><img src="images/skirts/dress_shirt.png"></button></li>
+                                    <li><button id="shirt2" class="shirt" ><img src="images/skirts/Nature-PNG-Transparent.png"></button></li>
+                                    <li><button id="shirt3" class="shirt" ><img src="images/skirts/ufc.png"></button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <div class="authorization">
+            <form>
+                <h2 class="authorization-title">Hi, Dear! =)</h2>
+                <input type="text" id="firstname" class="firstname" placeholder="First Name">
+                <input type="text" id="lastname" class="lastname" placeholder="Last Name">
+                <input type="text" id="email" class="email" placeholder="E-mail">
+                <button class="submitUserInfo" id="submitUserInfo">Start Game!</button>
+            </form>
+        </div>
+    </div>
+    <div class="dark-bg"></div>
+   <!--<script src="main.js" ></script>-->
+</body>
+</html>
