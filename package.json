@@ -9,6 +9,7 @@
     "webpack": "^4.6.0"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.4"
+    "babel-loader": "^7.1.4",
+    "webpack-cli": "^2.1.2"
   }
 }

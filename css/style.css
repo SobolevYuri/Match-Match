@@ -148,7 +148,25 @@ aside ul.game-menu li ul{
     border-radius: 15px;
 }
 
+.conclusion {
+    box-sizing: content-box;
+    font-family: Calibri;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
 
+.rez-table {
+    font-family: Calibri;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 60%;
+}
 
 
 
@@ -322,10 +340,11 @@ aside ul.game-menu li ul{
 
 div.authorization {
     width: 19%;
-    height: 289px;
+    height: auto;
     border-radius: 12px;
     background: rgb(87, 85, 85);
-    border:2px solid black;
+    border: 2px solid black;
+    padding: 5px;
     margin: 0 auto;
     position: fixed;
     top: 14%;

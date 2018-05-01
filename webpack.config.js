@@ -1,9 +1,7 @@
-var path = require("path");
-
-module.exports = {
-    entry: path.resolve('Match-match-game.js'),
-    output: {
-        filename: 'main.js',
-    },
-    watch: true,
+module.exports= {
+  entry: './js/Match-match-game.js',
+  output: {
+    filename: 'Build.js',
+  },
+  watch: true
 };

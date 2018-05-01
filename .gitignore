@@ -1,0 +1,6 @@
+.vscode
+.idea
+node_modules
+*.bundle.js
+*.log
+Build.js.map

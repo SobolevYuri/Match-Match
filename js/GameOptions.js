@@ -1,18 +1,18 @@
-import Card from "./Card.js";
+import CardsManager from "./CardsManager.js";
 import Difficulty from "./Difficulty.js";
 import Shirt from "./Shirt.js";
 
 export default class GameOptions {
 
     constructor() {
-        this.cards=new Card();
-        this.difficult=new Difficulty();
-        this.shirt=new Shirt();
+        this.cardsManager = new CardsManager();
+        this.difficult = new Difficulty();
+        this.shirt = new Shirt();
     }
 
     painting(gameField){
-        this.cards.setInstance(this.difficult.value);
-        this.cards.value.forEach(function(item){
+        this.cardsManager.setInstance(this.difficult.value);
+        this.cardsManager.value.forEach((item) => {
             const cardContainer=document.createElement('div');
             cardContainer.className='item';
             cardContainer.classList.add(this.difficult.cardSize);
@@ -32,6 +32,6 @@ export default class GameOptions {
             theBack.classList.add('theBack');
             theBack.classList.add(item.id);
             theCard.appendChild(theBack);
-        }.bind(this));
+        });
     }
 }

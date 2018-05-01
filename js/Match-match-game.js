@@ -1,3 +1,4 @@
+import UserManager from "./UserManager";
 import GameOptions from "./GameOptions";
 import NewGame from "./NewGame";
 
@@ -10,13 +11,13 @@ class Game {
     start() {
         const newGameButton = document.querySelector('#newGame');
         const gameOptions = new GameOptions();
-        newGameButton.addEventListener('click', function (e) {
-            if (!this.currentGame) this.currentGame = new NewGame(gameOptions);
-            else {
-                this.currentGame.stopTimer();
-                this.currentGame = new NewGame(gameOptions);
+        const userManager = new UserManager();
+        newGameButton.addEventListener('click', (event) => {
+            if (this.currentGame)  {
+              this.currentGame.stopTimer();
             }
-        }.bind(this));
+            this.currentGame = new NewGame(gameOptions, userManager);
+        });
     }
 }
 
