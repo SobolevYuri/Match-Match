@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:focus{
+    outline: none;
+}
+
 div.wrapper {
     position: relative;
     width: 100%;
@@ -66,19 +70,15 @@ aside {
 ul.game-menu {
     margin-top: 20px;
     height: 399px;
-    background: rgb(87, 85, 85);
-    border:2px solid black;
     padding-top: 7px;
-    border-radius: 15px;
 }
 ul.game-menu li{
     list-style:none;
 }
 ul.game-menu>li{
-    width:90%;
+    width: 69%;
     margin: 0 auto;
     margin-top: 10px;
-    background:#3366FF;
 }
 
 ul.game-menu li ul li{
@@ -112,7 +112,7 @@ border-radius:10px;
 
 ul.game-menu .shirt-menu img{
     height: 39px;
-    width: 55%;
+    width: 70%;
 }
 
 ul.game-menu .shirt-menu{
@@ -121,8 +121,18 @@ ul.game-menu .shirt-menu{
 
 ul.game-menu .shirt-menu button.shirt{
     width: 40%;
-    margin-left: 59px;
+    margin-left: 46px;
+    border-radius: 50%;
 }
+
+li.difficulty-menu,
+li.shirt-menu
+{
+    border-radius: 15px;
+    background: rgb(87, 85, 85);
+    border:2px solid black;
+}
+
 div.about-game{
 display:flex;
 justify-content: space-between;
